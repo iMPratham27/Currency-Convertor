@@ -1,0 +1,175 @@
+/* =======================
+   Input Box Styling
+======================= */
+.input-box {
+    background: #ffffff;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    display: flex;
+    gap: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.2s ease;
+}
+.input-box:hover {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* Amount section */
+.amount-section {
+    width: 50%;
+}
+
+/* Label text */
+.label-text {
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 6px;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+/* Amount input */
+.amount-input {
+    outline: none;
+    width: 100%;
+    background: #f9f9f9;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+.amount-input:focus {
+    border-color: #2563eb;
+    background-color: #fff;
+}
+
+/* Currency Dropdown Wrapper */
+.currency-section {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Improved Currency Select */
+.currency-select {
+    appearance: none; /* Removes default browser arrow */
+    background: #f9f9f9 url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23555' stroke-width='2' d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 10px center;
+    background-size: 12px;
+    padding: 8px 32px 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    color: #333;
+    transition: all 0.2s ease;
+}
+
+/* Hover & Focus Styles */
+.currency-select:hover {
+    border-color: #2563eb;
+    background-color: #fff;
+}
+.currency-select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+}
+
+/* Option Styling */
+.currency-select option {
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    padding: 8px;
+}
+
+
+/* =======================
+   App Container Styling
+======================= */
+.app-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+/* Center content wrapper */
+.content-wrapper {
+    width: 100%;
+}
+
+/* Card container */
+.card {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    border-radius: 12px;
+    padding: 24px;
+    backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* =======================
+   Form Controls
+======================= */
+.input-section {
+    width: 100%;
+    margin-bottom: 14px;
+}
+
+/* Swap button container */
+.swap-wrapper {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    margin: 14px 0;
+}
+
+/* Swap button */
+.swap-button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 50%;
+    background: #2563eb;
+    color: white;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.swap-button:hover {
+    background: #1d4ed8;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* Submit button */
+.submit-button {
+    width: 100%;
+    background: #2563eb;
+    color: white;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+.submit-button:hover {
+    background: #1d4ed8;
+    box-shadow: 0 3px 10px rgba(37, 99, 235, 0.3);
+}
